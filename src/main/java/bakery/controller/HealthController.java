@@ -1,4 +1,4 @@
-package com.bakery.bakery_management_system.controller;
+package bakery.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

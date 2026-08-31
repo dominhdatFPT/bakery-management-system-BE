@@ -1,4 +1,4 @@
-package com.bakery.bakery_management_system.config;
+package bakery.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
