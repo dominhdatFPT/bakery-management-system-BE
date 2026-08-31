@@ -1,4 +1,4 @@
-package com.bakery.bakery_management_system;
+package bakery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

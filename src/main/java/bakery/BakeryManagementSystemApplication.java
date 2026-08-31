@@ -1,4 +1,4 @@
-package com.bakery.bakery_management_system;
+package bakery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
