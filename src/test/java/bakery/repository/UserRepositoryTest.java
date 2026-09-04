@@ -33,7 +33,7 @@ class UserRepositoryTest {
         Optional<User> found = userRepository.findById(saved.getId());
 
         assertThat(found).isPresent();
-           assertThat(savedUser.getEmail()).isEqualTo("sai-chac-chan@example.com");
+        assertThat(found.get().getEmail()).isEqualTo("owner@bakery.test");
         assertThat(found.get().getRole()).isEqualTo(UserRole.OWNER);
     }
 }
