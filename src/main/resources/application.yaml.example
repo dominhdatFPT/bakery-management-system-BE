@@ -3,11 +3,15 @@ spring:
     name: bakery-management-system
   datasource:
     url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres?sslmode=require
-    username: postgres.abilnsbdswpgpwneuynb
-    password: Dat04022005@@1
+    username: postgres.your-project-ref
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: none
     show-sql: true
   flyway:
     enabled: true
+
+jwt:
+  secret: "your-own-secret-key-at-least-32-chars"
+  expiration: 86400000
