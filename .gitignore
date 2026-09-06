@@ -35,3 +35,4 @@ build/
 
 # mật khẩu thật cho local, không commit
 secrets.properties
+jwt-debug.log
