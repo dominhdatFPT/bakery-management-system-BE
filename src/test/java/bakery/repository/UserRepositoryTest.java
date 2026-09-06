@@ -22,8 +22,7 @@ class UserRepositoryTest {
     @Test
     void saveAndFindUser() {
         User user = new User();
-        user.setEmail("owner@bakery.test");
-        user.setPasswordHash("fake-hash");
+        user.setEmail("unittest-user@bakery.test");        user.setPasswordHash("fake-hash");
         user.setRole(UserRole.OWNER);
         user.setIsActive(true);
         user.setCreatedAt(LocalDateTime.now());
@@ -33,7 +32,7 @@ class UserRepositoryTest {
         Optional<User> found = userRepository.findById(saved.getId());
 
         assertThat(found).isPresent();
-        assertThat(found.get().getEmail()).isEqualTo("owner@bakery.test");
+        assertThat(found.get().getEmail()).isEqualTo("unittest-user@bakery.test");
         assertThat(found.get().getRole()).isEqualTo(UserRole.OWNER);
     }
 }
